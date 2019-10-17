@@ -405,7 +405,7 @@ height: 30px!important;
 .icon:before{
     content: "";
     background-repeat: no-repeat;
-    background-image: url(https://host.nugrohoprayogo.com/v2/icon.png);
+    background-image: url(https://cdn.jsdelivr.net/gh/prayogo17/webaikv2/icon.png);
 }
 
 .icon-search{
