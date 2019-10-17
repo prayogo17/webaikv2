@@ -10,12 +10,6 @@ var banner_data=[];
 var kategori=new Array();
 var aktif;
 
-function awal(data){
-   banner(data);
-    buat_kategori(data);
-    artikel_samping(data);
-   data_artikel=data;
-}
 
 
 function besarkan(gambar, ukuran){
