@@ -226,24 +226,25 @@ function index_donasi(a) {
 }
 
 function baca_juga(data, data_index){
-    var f=$(".baca-artikel .post-body").html();
+   // var f=$(".baca-artikel .post-body").html();
     
-    var panjang_html = f.length;
-    var sela = f.lastIndexOf('<br>', (3*panjang_html)/4);
+//     var panjang_html = f.length;
+//     var sela = f.lastIndexOf('<br>', (3*panjang_html)/4);
     
-    var text1 = f.substring(0, sela + 4);
+//     var text1 = f.substring(0, sela + 4);
     
-    var text3 = f.substring(sela + 5, f.length);
+//     var text3 = f.substring(sela + 5, f.length);
     
-    var text2 = '<div id="read-more"><ul></ul></div>';
+//     var text2 = '<div id="read-more"><ul></ul></div>';
     
-    var gabungan = text1 + text2 + text3;
+//     var gabungan = text1 + text2 + text3;
     
-    $(".baca-artikel .post-body").empty();
+//     $(".baca-artikel .post-body").empty();
     
-    $(".baca-artikel .post-body").append(gabungan);
+//     $(".baca-artikel .post-body").append(gabungan);
     
        var max = 4;
+	$("#read-more").append('<ul></ul>');
     for(var x=0;x<data_index.length;++x){
         var link = data.feed.entry[data_index[x]].link[4].href;
         var judul  = data.feed.entry[data_index[x]].link[4].title;
@@ -283,7 +284,7 @@ $(document).ready(function() {
     $(".judul-donasi").text(a[r].judul);
     $(".penyelenggara").text(a[r].penyelenggara);
     $(".penyelenggara-icon").css("background-image", "url(" + a[r].label_gambar + ")");
-    if (a[r].url === "0") {
+    if (a[r].url == "0") {
       $(".hari").text("Tidak di Tentukan");
     } else {
       $(".hari").text(a[r].sisa_hari + " Hari")
