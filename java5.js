@@ -245,7 +245,7 @@ function baca_juga(data, data_index){
     
        var max = 4;
 	$("#read-more").append('<ul></ul>');
-	$("#read-more").show();
+	$("#read-more").css('display','block');
     for(var x=0;x<data_index.length;++x){
         var link = data.feed.entry[data_index[x]].link[4].href;
         var judul  = data.feed.entry[data_index[x]].link[4].title;
