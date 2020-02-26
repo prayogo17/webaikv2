@@ -64,6 +64,7 @@ body, html{
 .row{
     display:table;
     clear:both;
+    width:100%;
 }
 
 .judul-sidebar span:after {
