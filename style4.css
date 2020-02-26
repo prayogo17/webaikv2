@@ -1192,14 +1192,14 @@ box-sizing: border-box;
 
 
  #read-more{
-            padding: 10px;
-            border-radius: 10px;
-            width: 100%;
-            margin: auto;
-            display: block;
-            margin-top: 30px;
-            background-color: #dddddd;
-            position: relative;
+      padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    background-color: #ddd;
+    position: relative;
         }
         
         #read-more:before{
