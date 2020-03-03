@@ -2,7 +2,7 @@
 
   function baca_juga(e, a) {
 
-      $("#read-more").append("<ul></ul>"), $("#read-more").css("display", "block");
+      $(".read-more").append("<ul></ul>"), $(".read-more").css("display", "block");
       for (var r = 0; r < a.length; ++r) {
           var n = e.feed.entry[a[r]].link[4].href,
               l = e.feed.entry[a[r]].link[4].title;
