@@ -230,9 +230,8 @@ box-sizing: border-box;
 #baca-post {
     color: #000;
     font-size: 16px;
-  font-family: 'Open Sans', sans-serif; 
-  line-height:150%;
-     
+    font-family: 'Open Sans',sans-serif;
+    line-height: 1.75em;
 }
 
 
