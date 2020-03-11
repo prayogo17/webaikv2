@@ -283,6 +283,9 @@ box-sizing: border-box;
 }
 
 @media (max-width: 1045px){
+    #sidebar {
+    margin-top: 80px!important;
+}
     
     #baca-post h1 {
         font-size: 23px!important;
