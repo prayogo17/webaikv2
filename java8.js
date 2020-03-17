@@ -145,9 +145,9 @@ $(document).on('click','#penutup', function(){
 $(document).ready(function(){
 	
     if($(window).width()>=1250){
-     $('#pulsa').append('<a href="https://api.whatsapp.com/send?phone=6281334555130" target="_blank"><img  src="https://cdn.jsdelivr.net/gh/prayogo17/hosting/pulsa2-min.png" alt="Jualan Pulsa" title="Jualan Pulsa"/></a>');
+     $('#pulsa').append('<a href="http://bit.ly/2Qpc9Q3" target="_blank"><img  src="https://cdn.jsdelivr.net/gh/prayogo17/hosting/pulsa2-min.png" alt="Jualan Pulsa" title="Jualan Pulsa"/></a>');
 }else{
-     $('#pulsa').append('<a href="https://api.whatsapp.com/send?phone=6281334555130" target="_blank"><img  src="https://cdn.jsdelivr.net/gh/prayogo17/hosting/pulsa3-min.png" alt="Jualan Pulsa" title="Jualan Pulsa"/></a>');
+     $('#pulsa').append('<a href="http://bit.ly/2Qpc9Q3" target="_blank"><img  src="https://cdn.jsdelivr.net/gh/prayogo17/hosting/pulsa3-min.png" alt="Jualan Pulsa" title="Jualan Pulsa"/></a>');
 }
 
 	
@@ -222,7 +222,7 @@ $('#sidebar').css('height',$('#daftar-artikel').height()+'px');
 
 
 function index_donasi(a) {
-  var r = ["musholla","air","kebakaran", "asap", "guru", "gaza", "muhammad", "bencana", "banjir", "gempa", "tsunami", "zakat", "masjid", "pesantren", "palestina", "mualaf", "muslim", "islam", "dhuafa", "suriah", "syam", "pasien", "rumah sakit", "qur'an", "al-qur'an", "al qur'an", "quran"],
+  var r = ["musholla","air","kebakaran", "asap", "guru", "gaza", "muhammad", "bencana", "banjir", "gempa", "tsunami", "zakat", "masjid", "pesantren", "palestina", "mualaf", "muslim", "islam", "dhuafa", "suriah", "syam", "pasien", "rumah sakit", "qur'an", "al-qur'an", "al qur'an", "quran","sumur"],
     e = 0;
   a: for (var n = 0; n < 30; ++n)
     for (var t = Math.floor(Math.random() * a.length), i = a[t].judul.toLowerCase(), s = 0; s < r.length; ++s)
