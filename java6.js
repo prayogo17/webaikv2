@@ -143,6 +143,14 @@ $(document).on('click','#penutup', function(){
 
 
 $(document).ready(function(){
+	
+    if($(window).width()>=1250){
+     $('#pulsa').append('<a href="https://api.whatsapp.com/send?phone=6281334555130" target="_blank"><img  src="https://cdn.jsdelivr.net/gh/prayogo17/hosting/pulsa2-min.png" alt="Jualan Pulsa" title="Jualan Pulsa"/></a>');
+}else{
+     $('#pulsa').append('<a href="https://api.whatsapp.com/send?phone=6281334555130" target="_blank"><img  src="https://cdn.jsdelivr.net/gh/prayogo17/hosting/pulsa3-min.png" alt="Jualan Pulsa" title="Jualan Pulsa"/></a>');
+}
+
+	
   $('.navbar-nav li').hover(function() {
       aktif= $(this);
       $('.navlist-active').removeClass('navlist-active');
