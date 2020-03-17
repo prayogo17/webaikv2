@@ -9,6 +9,9 @@ body, html{
     margin-bottom: 15px;
 }
 
+#pulsa img{
+width: 100%;
+}
 
 
 .comments-content .inline-thread {
