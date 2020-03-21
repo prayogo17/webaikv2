@@ -251,7 +251,7 @@ function baca_juga(data, data_index){
     
 //     $(".baca-artikel .post-body").append(gabungan);
     
-       var max = 4;
+       var max = 8;
 	$("#read-more").append('<ul></ul>');
 	$("#read-more").css('display','block');
     for(var x=0;x<data_index.length;++x){
