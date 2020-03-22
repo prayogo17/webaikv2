@@ -47,7 +47,7 @@ function banner(data){
 
 function artikel_samping(data){
     var banyak_artikel=data.feed.entry.length;
-    var jumlah_artikel=15;
+    var jumlah_artikel=10;
     var daftar_index_artikel=new Array();
      
     for(var w=0;w<jumlah_artikel;++w){
