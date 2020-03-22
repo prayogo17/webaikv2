@@ -144,6 +144,11 @@ $(document).on('click','#penutup', function(){
 
 $(document).ready(function(){
 	
+	$("html").scroll(function(){
+    var f= $("html").scrollTop();
+    console.log(f);
+  });
+	
     if($(window).width()>=1250){
      $('#pulsa').append('<a href="http://bit.ly/2Qpc9Q3" target="_blank"><img  src="https://cdn.jsdelivr.net/gh/prayogo17/hosting/pulsa2-min.png"/></a>');
 }else{
