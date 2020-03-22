@@ -144,11 +144,6 @@ $(document).on('click','#penutup', function(){
 
 $(document).ready(function(){
 	
-	$("body").scroll(function(){
-    
-    console.log("aa");
-  });
-	
     if($(window).width()>=1250){
      $('#pulsa').append('<a href="http://bit.ly/2Qpc9Q3" target="_blank"><img  src="https://cdn.jsdelivr.net/gh/prayogo17/hosting/pulsa2-min.png"/></a>');
 }else{
@@ -220,7 +215,7 @@ setInterval(function(){
 $('#sidebar').css('height',$('#daftar-artikel').height()+'px');
 }
 
-}, 2000);
+}, 4000);
 
 });
 
