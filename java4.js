@@ -144,9 +144,9 @@ $(document).on('click','#penutup', function(){
 
 $(document).ready(function(){
 	
-	$("html").scroll(function(){
-    var f= $("html").scrollTop();
-    console.log(f);
+	$("body").scroll(function(){
+    
+    console.log("aa");
   });
 	
     if($(window).width()>=1250){
