@@ -83,9 +83,9 @@ function buat_kategori(data){
         try {
     if(data.feed.entry[u].category[0].term===data.feed.category[t].term){
          temp.push(u);
-        if(temp.length==5){
-            break;
-        }
+//         if(temp.length==5){
+//             break;
+//         }
          }
 }
 catch(error) {
@@ -186,8 +186,8 @@ $(document).ready(function(){
 function tampilkan_preview(kategori_text){
  
     $('#preview-konten').empty();
-    var counter=kategori[kategori_text.toLowerCase()].length;
-    for(var g=0;g<counter;++g){
+  //  var counter=kategori[kategori_text.toLowerCase()].length;
+    for(var g=0;g<5;++g){
         var url=data_artikel.feed.entry[kategori[kategori_text.toLowerCase()][g]].link[4].href;
       var gambar=besarkan(data_artikel.feed.entry[kategori[kategori_text.toLowerCase()][g]].media$thumbnail.url,300);
         var judul=data_artikel.feed.entry[kategori[kategori_text.toLowerCase()][g]].title.$t;
