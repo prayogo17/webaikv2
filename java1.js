@@ -204,13 +204,7 @@ $(document).ready(function(){
 
 setInterval(function(){ 
 
-//     if($('#daftar-artikel').height()>=$('#sidebar').height()){
-//          $('#artikel-lain').show();
-// }else if($('#daftar-artikel').height()<$('#sidebar').height()){
 
-// $('#artikel-lain').hide();
-
-// } 
 
   if($('#daftar-artikel').height()>$('#sidebar').height()){
 $('#sidebar').css('height',$('#daftar-artikel').height()+'px');
@@ -235,7 +229,7 @@ function index_donasi(a) {
 }
 
 function baca_juga(data){
-    var kat = "komputer";
+    var kat = $(".label-name").first().text().toLowerCase();
     var banyak_artikel=kategori[kat].length;
     var max = 5;
     var data_index=new Array();
@@ -251,7 +245,7 @@ function baca_juga(data){
     }
 	
 	$("#read-more").append('<ul></ul>');
-	$("#read-more").css('display','block');
+	
     for(var x=0;x<data_index.length;++x){
         var link = data.feed.entry[kategori[kat][data_index[x]]].link[4].href;
         var judul  = data.feed.entry[kategori[kat][data_index[x]]].link[4].title;
@@ -262,6 +256,7 @@ function baca_juga(data){
             break;
         }
     }
+	$("#read-more").css('display','block');
 }
 
 function formatRupiah(angka, prefix){
