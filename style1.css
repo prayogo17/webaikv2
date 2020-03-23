@@ -240,6 +240,10 @@ box-sizing: border-box;
     line-height: 1.75em;
 }
 
+#baca-post img{
+border: 1px solid #d1d1d1;
+}
+
 
 @media (max-width: 1300px){
     #konten-container{
