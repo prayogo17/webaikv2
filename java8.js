@@ -253,8 +253,10 @@ function baca_juga(data){
 	$("#read-more").append('<ul></ul>');
 	$("#read-more").css('display','block');
     for(var x=0;x<data_index.length;++x){
-        var link = data.feed.entry[data_index[x]].link[4].href;
-        var judul  = data.feed.entry[data_index[x]].link[4].title;
+        var link = data.feed.entry[kategori[kat][data_index[x]]].link[4].href;
+        var judul  = data.feed.entry[kategori[kat][data_index[x]]].link[4].title;
+	  
+   
         $("#read-more ul").append('<li><a target="_blank" href="'+link+'">'+judul+'</a></li>');
         if(x==max-1){
             break;
