@@ -11,9 +11,10 @@ var kategori=new Array();
 var aktif;
 
 function awal(data){
-   banner(data);
+    banner(data);
     buat_kategori(data);
     artikel_samping(data);
+    baca_juga(data);
    data_artikel=data;
 }
 
@@ -69,7 +70,7 @@ function artikel_samping(data){
           $("#daftar-artikel-samping").append('<li class="list-artikel"> <a href="'+link+'"><div class="gambar-list-artikel" style="background-image: url('+gambar+')"></div><h3 class="judul-list-artikel">'+judul+'</h3></a></li>')
       }
     
-    baca_juga(data, daftar_index_artikel);
+ //   baca_juga(data, daftar_index_artikel);
 }
 
 
@@ -233,25 +234,22 @@ function index_donasi(a) {
   return e
 }
 
-function baca_juga(data, data_index){
-   // var f=$(".baca-artikel .post-body").html();
-    
-//     var panjang_html = f.length;
-//     var sela = f.lastIndexOf('<br>', (3*panjang_html)/4);
-    
-//     var text1 = f.substring(0, sela + 4);
-    
-//     var text3 = f.substring(sela + 5, f.length);
-    
-//     var text2 = '<div id="read-more"><ul></ul></div>';
-    
-//     var gabungan = text1 + text2 + text3;
-    
-//     $(".baca-artikel .post-body").empty();
-    
-//     $(".baca-artikel .post-body").append(gabungan);
-    
-       var max = 8;
+function baca_juga(data){
+    var kat = "komputer";
+    var banyak_artikel=kategori[kat].length;
+    var max = 5;
+    var data_index=new Array();
+     
+    for(var w=0;w<max;++w){
+        var angka_random=Math.floor((Math.random() * banyak_artikel) + 0);
+       
+        if(data_index.indexOf(angka_random)===-1){
+              data_index.push(angka_random);
+        }else if(data_index.indexOf(angka_random)!==-1){
+            --w;
+        }
+    }
+	
 	$("#read-more").append('<ul></ul>');
 	$("#read-more").css('display','block');
     for(var x=0;x<data_index.length;++x){
