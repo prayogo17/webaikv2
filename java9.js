@@ -14,7 +14,7 @@ function awal(data){
     banner(data);
     buat_kategori(data);
     artikel_samping(data);
-    baca_juga(data);
+   // baca_juga(data);
    data_artikel=data;
 }
 
@@ -144,7 +144,7 @@ $(document).on('click','#penutup', function(){
 
 
 $(document).ready(function(){
-	
+     baca_juga(data_artikel);
     if($(window).width()>=1250){
      $('#pulsa').append('<a href="http://bit.ly/2Qpc9Q3" target="_blank"><img  src="https://cdn.jsdelivr.net/gh/prayogo17/hosting/pulsa2-min.png"/></a>');
 }else{
@@ -257,7 +257,7 @@ function baca_juga(data){
         var judul  = data.feed.entry[kategori[kat][data_index[x]]].link[4].title;
 	  
    
-        $("#read-more ul").append('<li><a target="_blank" href="'+link+'">'+judul+'</a></li>');
+        $("#read-more ul").append('<li><a  href="'+link+'">'+judul+'</a></li>');
         if(x==max-1){
             break;
         }
