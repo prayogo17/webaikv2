@@ -11,11 +11,12 @@ var kategori=new Array();
 var aktif;
 
 function awal(data){
+    data_artikel=data;
     banner(data);
     buat_kategori(data);
     artikel_samping(data);
     baca_juga(data);
-    data_artikel=data;
+   
 }
 
 function besarkan(gambar, ukuran){
