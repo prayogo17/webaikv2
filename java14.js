@@ -147,7 +147,17 @@ $(document).on('click','#penutup', function(){
 $(document).ready(function(){
    
     if($(window).width()>=1250){
-     $('#pulsa').append('<a href="http://bit.ly/2Qpc9Q3" target="_blank"><img  src="https://cdn.jsdelivr.net/gh/prayogo17/hosting/pulsa2-min.png"/></a>');
+     $('#pulsa').append(`<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- tautan di artikel -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5983837792067765"
+     data-ad-slot="2337067814"
+     data-ad-format="link"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>`);
 }else{
      $('#pulsa').append('<a href="http://bit.ly/2Qpc9Q3" target="_blank"><img  src="https://cdn.jsdelivr.net/gh/prayogo17/hosting/pulsa3-min.png"/></a>');
 }
