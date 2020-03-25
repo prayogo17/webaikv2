@@ -74,7 +74,14 @@ function artikel_samping(data){
 
 }
 
-
+function acak_iklan(){
+let acak = Math.floor(Math.random() * 10) + 1;
+if(acak<=5){
+$(".iklan_judul").append('<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- tautan di artikel --><ins class="adsbygoogle" style="display:block;margin-bottom: 20px;" data-ad-client="ca-pub-5983837792067765" data-ad-slot="2337067814" data-ad-format="link" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>');
+}else{
+$(".iklan_judul").append('<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- respon --><ins class="adsbygoogle"  style="display:block; margin-bottom: 20px;" data-ad-client="ca-pub-5983837792067765" data-ad-slot="8178603775" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>');
+}
+}
 
 function buat_kategori(data){
     var banyak_artikel = data.feed.entry.length;
@@ -145,7 +152,7 @@ $(document).on('click','#penutup', function(){
 
 
 $(document).ready(function(){
-   
+    acak_iklan();
     if($(window).width()>=1250){
      $('#pulsa').append('<a href="http://bit.ly/2Qpc9Q3" target="_blank"><img  src="https://cdn.jsdelivr.net/gh/prayogo17/hosting/pulsa2-min.png"/></a>');
 }else{
