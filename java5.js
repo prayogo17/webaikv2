@@ -217,7 +217,7 @@ $('#sidebar').css('height',$('#daftar-artikel').height()+'px');
 
 
 function index_donasi(a) {
-  var r = ["corona","musholla","air","kebakaran", "asap", "guru", "gaza", "muhammad", "bencana", "banjir", "gempa", "tsunami", "zakat", "masjid", "pesantren", "palestina", "mualaf", "muslim", "islam", "dhuafa", "suriah", "syam", "pasien", "rumah sakit", "qur'an", "al-qur'an", "al qur'an", "quran","sumur"],
+  var r = ["apd","medis","corona","musholla","air","kebakaran", "asap", "guru", "gaza", "muhammad", "bencana", "banjir", "gempa", "tsunami", "zakat", "masjid", "pesantren", "palestina", "mualaf", "muslim", "islam", "dhuafa", "suriah", "syam", "pasien", "rumah sakit", "qur'an", "al-qur'an", "al qur'an", "quran","sumur"],
     e = 0;
   a: for (var n = 0; n < 30; ++n)
     for (var t = Math.floor(Math.random() * a.length), i = a[t].judul.toLowerCase(), s = 0; s < r.length; ++s)
