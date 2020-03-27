@@ -1204,6 +1204,10 @@ box-sizing: border-box;
     color: #fff;
 }
 
+.btn--pink:hover{
+   background-color: rgb(203, 21, 82);
+}
+
 .donasi .gambar-donasi, .donasi .penyelenggara-icon {
     background-repeat: no-repeat;
     background-position: center;
