@@ -294,9 +294,9 @@ $(document).ready(function() {
       $(".hari").text(a[r].sisa_hari + " hari lagi")
     }
     if (a[r].target_donasi === "2500000000000") {
-      $(".terkumpul").text(formatRupiah(a[r].donasi_sekarang));
+      $(".terkumpul").text("<b>" + formatRupiah(a[r].donasi_sekarang) + "</b>");
     } else {
-      $(".terkumpul").text(formatRupiah(a[r].donasi_sekarang,true) + " dari target "+formatRupiah(a[r].target_donasi,true));
+      $(".terkumpul").text("<b>" + formatRupiah(a[r].donasi_sekarang,true) + "</b> dari target "+formatRupiah(a[r].target_donasi,true));
     }
     $(".wrap-donasi").show();
   })
