@@ -1045,14 +1045,14 @@ body, html {
 }
 
 .icon-left:before {
-    width: 18px;
+ width: 18px;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
     height: 30px;
     position: absolute;
-    background-size: 126px;
-    background-position: -91px 0
+    background-size: 147px;
+    background-position: -91px 0;
 }
 
 .icon-left {
