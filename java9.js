@@ -153,23 +153,23 @@ $(document).ready(function(){
       $('.navlist-active').removeClass('navlist-active');
       tampilkan_preview($(this).text());
       aktif.addClass('navlist-active');
-       $('#preview-konten').css({"transform":"translateY(-15px)"});
+        $('#preview-konten').css({"bottom":'-150px'});
     },function(){
 
         $('.navlist-active').removeClass('navlist-active');
-             $('#preview-konten').css({"transform":"translateY(-350px)"});
+             $('#preview-konten').css({"bottom":'50px'});
  
 
     });
     
       $('#preview-konten').hover(function() {
          aktif.addClass('navlist-active');
-         $('#preview-konten').css({"transform":"translateY(-15px)"});
+         $('#preview-konten').css({"bottom":'-150px'});
      //  $('.navigasi-scrool').css("overflow-x","hidden");
     },function(){
  //   if($('#preview-konten').is(":hover")){
             $('.navlist-active').removeClass('navlist-active');
-          $('#preview-konten').css({"transform":"translateY(-350px)"});
+          $('#preview-konten').css({"bottom":'50px'});
           //   $('.navigasi-scrool').css("overflow-x","scroll");
      //   }
 
