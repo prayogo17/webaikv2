@@ -146,6 +146,21 @@ $(document).ready(function(){
 }else{
      $('#pulsa').append('<a href="http://bit.ly/2Qpc9Q3" target="_blank"><img  src="https://cdn.jsdelivr.net/gh/prayogo17/hosting/pulsa3-min.png"/></a>');
 }
+	
+	 $("#daftar-isi").prepend("<div class='daftar-judul'><span>ISI TULISAN</span><button>Tampilkan</button></div>");
+
+            $(document).on('click', '#daftar-isi button', function() {
+                if (daftar_isi) {
+                    daftar_isi = false;
+                    $("#daftar-isi ul").hide();
+                    $("#daftar-isi button").text('Tampilkan');
+                } else {
+                    daftar_isi = true;
+                    $("#daftar-isi ul").show();
+                    $("#daftar-isi button").text('Tutup');
+                }
+
+            });
 
 	
   $('.navbar-nav li').hover(function() {
