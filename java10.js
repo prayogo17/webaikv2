@@ -1,6 +1,6 @@
 
 var cari=false;
-var daftar_isi = true;
+var daftar_isi = false;
 var data_artikel;
 var banner_data=[];
 var kategori=new Array();
@@ -148,7 +148,7 @@ $(document).ready(function(){
 }
 	
 	 $("#daftar-isi").prepend("<div class='daftar-judul'><span>ISI TULISAN</span><button>Tampilkan</button></div>");
-
+         $("#daftar-isi ul").hide();
             $(document).on('click', '#daftar-isi button', function() {
                 if (daftar_isi) {
                     daftar_isi = false;
