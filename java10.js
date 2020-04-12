@@ -1,6 +1,6 @@
 
 var cari=false;
-
+var daftar_isi = true;
 var data_artikel;
 var banner_data=[];
 var kategori=new Array();
