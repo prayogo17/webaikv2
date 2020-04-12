@@ -1374,3 +1374,60 @@ body, html {
     overflow: auto;
     padding: 1em
 }
+
+ #daftar-isi {
+            margin: auto;
+            border: double 4px #c2dbe8;
+            width: auto;
+            min-width: 400px;
+            display: inline-block;
+
+        }
+
+        #daftar-isi ul li {
+            list-style: none;
+
+        }
+
+        #daftar-isi ul li ul li {
+            list-style: none;
+            margin-bottom: 8px;
+        }
+
+
+
+        #daftar-isi ul {
+            padding: 10px;
+            height: 100%;
+            margin: 0;
+
+        }
+
+        #daftar-isi ul li ul {
+            padding-left: 20px;
+
+        }
+
+        #daftar-isi a {
+            font-family: 'Roboto Slab', serif;
+            text-decoration: none;
+        }
+
+        #daftar-isi .daftar-judul span {
+            font-weight: bold;
+            font-family: 'Roboto Slab', serif;
+            color: white;
+
+        }
+
+        #daftar-isi .daftar-judul button {
+            position: absolute;
+            top: 10px;
+            right: 10px
+        }
+
+        #daftar-isi .daftar-judul {
+            position: relative;
+            background-color: #1d90cc;
+            padding: 10px;
+        }
