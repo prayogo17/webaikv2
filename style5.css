@@ -308,6 +308,11 @@ body, html {
         font-size: 15px !important
     }
 
+     #daftar-isi {
+   
+            width: 100%!important;
+        }
+    
     #baca-post h1 {
         font-size: 23px !important
     }
@@ -1384,7 +1389,7 @@ body, html {
 }
 
  #daftar-isi {
-
+            display : none;
             border: double 4px #c2dbe8;
             width: auto;
             min-width: 400px;
@@ -1449,14 +1454,20 @@ body, html {
         }
 
 #baca-post h2 {
-    font-size: 26px;
-    margin-top: 0px;
     font-weight: bold;
 }
+
+
 
 #baca-post h3 {
     font-size: 23px;
     margin-top: 0px;
     font-weight: bold;
     margin-bottom: 5px;
+}
+
+@media (min-width:1045px) {
+     #baca-post h2 {
+        font-size: 26px !important
+    }
 }
