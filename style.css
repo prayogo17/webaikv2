@@ -1389,6 +1389,7 @@ body, html {
 }
 
  #daftar-isi {
+            box-sizing: border-box;
             display : none;
             border: double 4px #c2dbe8;
             width: auto;
@@ -1416,6 +1417,7 @@ body, html {
 
 
         #daftar-isi ul {
+            display : none;
             padding: 10px;
             height: 100%;
             padding-left: 20px;
