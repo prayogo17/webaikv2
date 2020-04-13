@@ -311,6 +311,14 @@ body, html {
     #baca-post h1 {
         font-size: 23px !important
     }
+    
+     #baca-post h2 {
+        font-size: 19px !important
+    }
+    
+      #baca-post h3 {
+        font-size: 16px !important
+    }
 
     .donasi .gambar-donasi {
         height: 240px !important
@@ -1439,3 +1447,16 @@ body, html {
             background-color: #1d90cc;
             padding: 10px;
         }
+
+#baca-post h2 {
+    font-size: 26px;
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+#baca-post h3 {
+    font-size: 23px;
+    margin-top: 0px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
