@@ -309,7 +309,7 @@ body, html {
     }
 
      #daftar-isi {
-   
+           min-width:auto!important;
             width: 100%!important;
         }
     
@@ -1394,7 +1394,6 @@ body, html {
             border: double 4px #c2dbe8;
             width: auto;
             min-width: 400px;
-            display: table;
             margin-top: 10px;
             margin-bottom: 10px;
 
