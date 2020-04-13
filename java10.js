@@ -149,6 +149,7 @@ $(document).ready(function(){
 	
 	 $("#daftar-isi").prepend("<div class='daftar-judul'><span>ISI TULISAN</span><button>Tampilkan</button></div>");
          $("#daftar-isi ul").hide();
+	 $("#daftar-isi").show();
             $(document).on('click', '#daftar-isi button', function() {
                 if (daftar_isi) {
                     daftar_isi = false;
