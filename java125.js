@@ -45,7 +45,7 @@ $.fn.isInViewport = function() {
 
 function lazy_load() {
   $(window).scroll(function(event) {
-
+if(img.length!==0){
     img.forEach(function(item, i) {
 
       if ($(item).isInViewport()) {
@@ -56,9 +56,9 @@ function lazy_load() {
         $(item).attr('src', $(item).attr('data-src'));
         img.splice(i, 1);
       }
-
+    
     });
-
+}
 
   });
 
