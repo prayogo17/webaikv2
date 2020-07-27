@@ -77,7 +77,10 @@ if(img.length!==0){
       img.push(obj);
 
       let image = $(obj).attr('src');
-      image = image.replace('s640', 's50');
+      image = image.replace('/s640/', '/s50/');
+      image = image.replace('/s400/', '/s50/');
+      image = image.replace('/s200/', '/s50/');
+      image = image.replace('/s320/', '/s50/');
 
       $(obj).attr('data-src', $(obj).attr('src'));
 
