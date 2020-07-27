@@ -56,7 +56,9 @@ function lazy_load() {
 
       $(obj).parent().addClass('shimmer-container');
       $(obj).parent().append("<div class='shimmer'/>");
-
+      $(obj).parent().find('.shimmer').click(function(e){
+  e.preventDefault();
+});
       img.push(obj);
 
       let image = $(obj).attr('src');
