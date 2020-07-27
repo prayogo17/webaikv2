@@ -45,7 +45,7 @@ $.fn.isInViewport = function() {
 
 function lazy_load() {
   $(window).scroll(function(event) {
-    console.log("scroll");
+    
 if(img.length!==0){
     img.forEach(function(item, i) {
 
@@ -62,11 +62,11 @@ if(img.length!==0){
 }
 
   });
-       console.log("lazy");
+  
   $('.baca-artikel img').each(function(i, obj) {
 
 
-    let check1 = $(obj).attr('data-original-height');
+    let check1 = $(obj).attr('src');
     let check2 = $(obj).parent().attr('href');
 
     if (check1 !== undefined && check2 !== undefined) {
