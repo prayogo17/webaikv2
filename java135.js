@@ -44,7 +44,7 @@ $.fn.isInViewport = function() {
 
 
 function lazy_load() {
-  $(window).scroll(function(event) {
+  $("#konten-container").scroll(function(event) {
 if(img.length!==0){
     img.forEach(function(item, i) {
 
