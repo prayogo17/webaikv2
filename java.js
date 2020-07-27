@@ -32,10 +32,10 @@ $.fn.isInViewport = function() {
   var viewportTop = $(window).scrollTop();
   var viewportBottom = viewportTop + $(window).height();
 
-  return elementBottom & gt;
-  viewportTop & amp; & amp;
-  elementTop & lt;
-  viewportBottom;
+  return elementBottom >
+    viewportTop &&
+    elementTop <
+    viewportBottom;
 };
 
 
@@ -68,7 +68,7 @@ function lazy_load() {
     let check1 = $(obj).attr('data-original-height');
     let check2 = $(obj).parent().attr('href');
 
-    if (check1 !== undefined & amp; & amp; check2 !== undefined) {
+    if (check1 !== undefined && check2 !== undefined) {
 
       $(obj).parent().addClass('shimmer-container');
       $(obj).parent().append("<div class='shimmer'/>");
