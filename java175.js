@@ -21,7 +21,7 @@ $(document).ready(function() {
   iklan_manual();
   tinggi_sedebar();
   preview_header();
-  daftar_isi();
+  daftar_isi2();
 });
 
 //init jquery function
@@ -235,7 +235,7 @@ function iklan_manual() {
 
 
 
-function daftar_isi() {
+function daftar_isi2() {
   $("#daftar-isi").prepend("<div class='daftar-judul'><span>ISI TULISAN</span><button>Tampilkan</button></div>");
   $("#daftar-isi").css('display', 'table');
   $(document).on('click', '#daftar-isi button', function() {
