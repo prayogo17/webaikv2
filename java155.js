@@ -16,7 +16,7 @@ function awal(data) {
 }
 
 $(document).ready(function() {
-  lazy_load();
+
   donasi();
   iklan_manual();
   tinggi_sedebar();
