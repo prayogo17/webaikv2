@@ -75,7 +75,7 @@ function lazy_load() {
   
   
     $(window).scroll(function(event) {
-    
+    console.log("scroll");
 if(img.length!==0){
     img.forEach(function(item, i) {
 
@@ -314,15 +314,11 @@ function tampilkan_preview(kategori_text) {
 
 
 function tinggi_sedebar() {
-  setInterval(function() {
-
-
-
     if ($('#daftar-artikel').height() > $('#sidebar').height()) {
       $('#sidebar').css('height', $('#daftar-artikel').height() + 'px');
     }
-
-  }, 2000);
+  
+  setTimeout(tinggi_sedebar(),5000);
 }
 
 
