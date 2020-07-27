@@ -44,24 +44,7 @@ $.fn.isInViewport = function() {
 
 
 function lazy_load() {
-  $(window).scroll(function(event) {
-    
-if(img.length!==0){
-    img.forEach(function(item, i) {
 
-      if ($(item).isInViewport()) {
-
-        $(item).on('load', function(status) {
-          $(item).parent().find('.shimmer').remove();
-        });
-        $(item).attr('src', $(item).attr('data-src'));
-        img.splice(i, 1);
-      }
-    
-    });
-}
-
-  });
   
   $('.baca-artikel img').each(function(i, obj) {
 
@@ -87,6 +70,28 @@ if(img.length!==0){
       $(obj).attr('src', image);
 
     }
+
+  });
+  
+  
+    $(window).scroll(function(event) {
+    
+if(img.length!==0){
+    img.forEach(function(item, i) {
+
+      if ($(item).isInViewport()) {
+
+        $(item).on('load', function(status) {
+          $(item).parent().find('.shimmer').remove();
+        });
+        $(item).attr('src', $(item).attr('data-src'));
+        img.splice(i, 1);
+      }
+    
+    });
+}else{
+$(window).off();
+}
 
   });
 }
