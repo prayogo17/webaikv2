@@ -54,18 +54,18 @@ function lazy_load() {
 
     if (check1 !== undefined && check2 !== undefined) {
 
-      $(obj).parent().addClass('shimmer-container');
-      $(obj).parent().append("<div class='shimmer'/>");
-      $(obj).parent().find('.shimmer').click(function(e){
-  e.preventDefault();
-});
+//       $(obj).parent().addClass('shimmer-container');
+//       $(obj).parent().append("<div class='shimmer'/>");
+//       $(obj).parent().find('.shimmer').click(function(e){
+//   e.preventDefault();
+// });
       img.push(obj);
 
       let image = $(obj).attr('src');
-      image = image.replace('/s640/', '/s50/');
-      image = image.replace('/s400/', '/s50/');
-      image = image.replace('/s200/', '/s50/');
-      image = image.replace('/s320/', '/s50/');
+      image = image.replace('/s640/', '/s40/');
+      image = image.replace('/s400/', '/s40/');
+      image = image.replace('/s200/', '/s40/');
+      image = image.replace('/s320/', '/s40/');
 
       $(obj).attr('data-src', $(obj).attr('src'));
 
@@ -82,10 +82,11 @@ if(img.length!==0){
 
       if ($(item).isInViewport()) {
 
-        $(item).on('load', function(status) {
-          $(item).parent().find('.shimmer').remove();
-        });
+//         $(item).on('load', function(status) {
+//           $(item).parent().find('.shimmer').remove();
+//         });
         $(item).attr('src', $(item).attr('data-src'));
+        $(item).attr('data-src','');
         img.splice(i, 1);
       }
     
