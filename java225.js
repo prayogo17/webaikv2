@@ -24,10 +24,10 @@ $(document).ready(function() {
   daftar_isi2();
 });
 
-//init jquery function
-$.fn.isInViewport = function() {
-  var elementTop = $(this).offset().top;
-  var elementBottom = elementTop + $(this).outerHeight();
+
+ function isInViewport(element) {
+  var elementTop = $(element).offset().top;
+  var elementBottom = elementTop + $(element).outerHeight();
 
   var viewportTop = $(window).scrollTop();
   var viewportBottom = viewportTop + $(window).height();
@@ -48,24 +48,18 @@ function lazy_load() {
   
   $('.baca-artikel img').each(function(i, obj) {
 
-
+   
     let check1 = $(obj).attr('src');
     let check2 = $(obj).parent().attr('href');
+    let check3 = check1.search("blogspot.com");
 
-    if (check1 !== undefined && check2 !== undefined) {
+    if (check1 !== undefined && check2 !== undefined && check3 != -1) {
 
-//       $(obj).parent().addClass('shimmer-container');
-//       $(obj).parent().append("<div class='shimmer'/>");
-//       $(obj).parent().find('.shimmer').click(function(e){
-//   e.preventDefault();
-// });
       img.push(obj);
 
       let image = $(obj).attr('src');
-      image = image.replace('/s640/', '/s40/');
-      image = image.replace('/s400/', '/s40/');
-      image = image.replace('/s200/', '/s40/');
-      image = image.replace('/s320/', '/s40/');
+      image = image.replace(image.split('/')[7], 's40');
+
 
       $(obj).attr('data-src', $(obj).attr('src'));
 
@@ -80,11 +74,8 @@ function lazy_load() {
 if(img.length!==0){
     img.forEach(function(item, i) {
 
-      if ($(item).isInViewport()) {
+      if (isInViewport(item)) {
 
-//         $(item).on('load', function(status) {
-//           $(item).parent().find('.shimmer').remove();
-//         });
         $(item).attr('src', $(item).attr('data-src'));
         $(item).attr('data-src','');
         img.splice(i, 1);
@@ -417,3 +408,4 @@ function donasi() {
   })
 
 }
+lazy_load();
