@@ -409,3 +409,4 @@ function donasi() {
 
 }
 lazy_load();
+setTimeout(function(){Math.floor(20*Math.random())+1>15?$(".iklan-bawah").append('<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5983837792067765" data-ad-slot="2337067814" data-ad-format="link" data-full-width-responsive="true"></ins>'):$(".iklan-bawah").append('<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5983837792067765" data-ad-slot="8178603775" data-ad-format="auto" data-full-width-responsive="true"></ins>'),$(".iklan-bawah").append('<ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed" data-ad-client="ca-pub-5983837792067765" data-ad-slot="9399973291"></ins>'),(adsbygoogle=window.adsbygoogle||[]).push({}),(adsbygoogle=window.adsbygoogle||[]).push({})},4e3);
