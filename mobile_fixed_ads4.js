@@ -14,7 +14,7 @@ $('body').append(`
 `);
 
 }else{
-$('body').prepend(`
+$('body').append(`
 <div class='sticky-ad' id='sticky-ad'>
 <ins class="adsbygoogle"
      style="display:inline-block;width:320px;height:90px"
