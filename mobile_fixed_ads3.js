@@ -1,4 +1,4 @@
- var target = document.getElementById('sticky-ad');
+
 var f = Math.floor(Math.random() * 10) + 1;
 
 if(f>5){
@@ -93,6 +93,7 @@ $('body').append(`
 `);
 
  (adsbygoogle = window.adsbygoogle || []).push({});
+ var target = document.getElementById('sticky-ad');
 window.addEventListener("scroll",function(){
  
   if(window.pageYOffset > 300){
