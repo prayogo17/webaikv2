@@ -1,0 +1,1 @@
+let o=$(".a1").length;$(".a1").append('<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-5983837792067765" data-ad-slot="3233398850"></ins>');for(let a=0;o<a;++a)(adsbygoogle=window.adsbygoogle||[]).push({});
