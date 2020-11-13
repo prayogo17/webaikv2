@@ -1,13 +1,13 @@
 
 var f = Math.floor(Math.random() * 100) + 1;
 
-if(f>60){
+if(f>50){
 $('body').append(`
 <div class='sticky-ad' id='sticky-ad'>
 <ins class="adsbygoogle"
      style="display:inline-block;width:200px;height:90px"
      data-ad-client="ca-pub-5983837792067765"
-     data-ad-slot="6728972499"></ins>
+     data-ad-slot="8347907507"></ins>
 <button aria-label='Close this ad' class='sticky-ad-close-button' onclick='document.getElementById(&apos;sticky-ad&apos;).style.display=&apos;none&apos;;'/>
 </div>
 
