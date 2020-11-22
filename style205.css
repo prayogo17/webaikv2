@@ -269,7 +269,9 @@ body, html {
         display: none
     }
 
-    .artikel h1 {
+    .artikel h1,
+    .artikel h2
+    {
         font-size: 15px !important
     }
 
@@ -640,7 +642,7 @@ body, html {
     font-weight: 700
 }
 
-.deskripsi h1:hover {
+.deskripsi h1:hover, .deskripsi h2:hover {
     color: #1d90cc
 }
 
@@ -683,11 +685,11 @@ body, html {
     padding: 0 0 0 10px
 }
 
-.artikel h1 {
+.artikel h1, .artikel h2 {
     font-weight: 700
 }
 
-.deskripsi h1 {
+.deskripsi h1,.deskripsi h2 {
     margin-top: 0;
     color: #000
 }
@@ -741,7 +743,7 @@ body, html {
     z-index: 11000 !important
 }
 
-.artikel h1 {
+.artikel h1, .artikel h2 {
     font-size: 20px
 }
 
