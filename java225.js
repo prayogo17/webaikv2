@@ -385,7 +385,7 @@ function donasi() {
 
   $.ajax({
     method: "GET",
-    url: "https://api1.nugrohoprayogo.com",
+    url: "https://api.webaik.com",
     dataType: "json"
   }).done(function(a) {
     var r = index_donasi(a);
