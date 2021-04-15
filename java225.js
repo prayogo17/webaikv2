@@ -303,7 +303,7 @@ function tampilkan_preview(kategori_text) {
   for (var g = 0; g < 5; ++g) {
     var url = data_artikel.feed.entry[kategori[kategori_text.toLowerCase()][g]].link[4].href;
     var gambar = 'https://cdn.jsdelivr.net/gh/prayogo17/webaikv2@24/webaik-logo-min.png';
-    if(data_artikel.feed.entry[daftar_index_artikel[x]].media$thumbnail!==undefined){
+    if(data_artikel.feed.entry[kategori[kategori_text.toLowerCase()][g]].media$thumbnail!==undefined){
        gambar = besarkan(data_artikel.feed.entry[kategori[kategori_text.toLowerCase()][g]].media$thumbnail.url, 300);
     }
     var judul = data_artikel.feed.entry[kategori[kategori_text.toLowerCase()][g]].title.$t;
