@@ -143,7 +143,13 @@ function artikel_samping(data) {
   for (var x = 0; x < daftar_index_artikel.length; ++x) {
     var link = data.feed.entry[daftar_index_artikel[x]].link[4].href;
     var judul = data.feed.entry[daftar_index_artikel[x]].link[4].title;
-    var gambar = data.feed.entry[daftar_index_artikel[x]].media$thumbnail.url;
+    
+    var gambar = 'https://cdn.jsdelivr.net/gh/prayogo17/webaikv2@24/webaik-logo-min.png';
+    
+    if(data.feed.entry[daftar_index_artikel[x]].media$thumbnail.url===undefined){
+       gambar = data.feed.entry[daftar_index_artikel[x]].media$thumbnail.url;
+    }
+    
 
     $("#daftar-artikel-samping").append('<li class="list-artikel"> <a href="' + link + '"><div class="gambar-list-artikel" style="background-image: url(' + gambar + ')"></div><h3 class="judul-list-artikel">' + judul + '</h3></a></li>')
   }
