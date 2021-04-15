@@ -146,7 +146,7 @@ function artikel_samping(data) {
     
     var gambar = 'https://cdn.jsdelivr.net/gh/prayogo17/webaikv2@24/webaik-logo-min.png';
     
-    if(data.feed.entry[daftar_index_artikel[x]].media$thumbnail.url===undefined){
+    if(data.feed.entry[daftar_index_artikel[x]].media$thumbnail!==undefined){
        gambar = data.feed.entry[daftar_index_artikel[x]].media$thumbnail.url;
     }
     
@@ -302,7 +302,10 @@ function tampilkan_preview(kategori_text) {
   //  var counter=kategori[kategori_text.toLowerCase()].length;
   for (var g = 0; g < 5; ++g) {
     var url = data_artikel.feed.entry[kategori[kategori_text.toLowerCase()][g]].link[4].href;
-    var gambar = besarkan(data_artikel.feed.entry[kategori[kategori_text.toLowerCase()][g]].media$thumbnail.url, 300);
+    var gambar = 'https://cdn.jsdelivr.net/gh/prayogo17/webaikv2@24/webaik-logo-min.png';
+    if(data.feed.entry[daftar_index_artikel[x]].media$thumbnail!==undefined){
+       gambar = besarkan(data_artikel.feed.entry[kategori[kategori_text.toLowerCase()][g]].media$thumbnail.url, 300);
+    }
     var judul = data_artikel.feed.entry[kategori[kategori_text.toLowerCase()][g]].title.$t;
     $('#preview-konten').append('<a href="' + url + '"> <div style="background-image: url(' + gambar + ');" class="preview-artikel"><div class="preview-gambar"></div><h2>' + judul + '</h2></div></a>');
 
