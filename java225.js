@@ -97,7 +97,7 @@ $(window).off();
 
 
 function besarkan(gambar, ukuran) {
-  return gambar.replace('s72-c', "s" + ukuran);
+  return gambar.replace(gambar.split('/')[7], "s" + ukuran);
 }
 
 
